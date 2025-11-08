@@ -1,0 +1,222 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio — Alison Fisher</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="site-title">Alison Fisher</h1>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#coursework">Coursework</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <h2 class="hero-title">Welcome</h2>
+          <p class="lead">Hi — I'm <strong>Alison Fisher</strong>. I am a single mother to twin boys and a Sales Manager for a wholesale company.</p>
+          <p><a class="cta" href="#about">Learn more</a></p>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="container">
+          <h3>About Me</h3>
+          <p>I am a single mother to twin boys and a Sales Manager for a wholesale company. I balance family life with leading sales operations, building customer relationships, and helping my team meet ambitious targets.</p>
+        </div>
+      </section>
+
+      <!-- Skills (In Progress) -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <h3>Skills (In Progress)</h3>
+          <p class="muted">Currently practicing small projects in VS Code and Python — still learning and building fundamentals.</p>
+          <div class="skill-grid">
+            <div class="skill-card"><h4>Python Basics</h4><p>Scripts, loops, functions, file I/O</p></div>
+            <div class="skill-card"><h4>Tools</h4><p>VS Code setup, extensions, Git fundamentals</p></div>
+            <div class="skill-card"><h4>Sales Ops</h4><p>Forecasting, pipeline, account relations</p></div>
+            <div class="skill-card"><h4>Visualization</h4><p>Early practice with charts and summaries</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data Science Coursework -->
+      <section id="coursework" class="coursework">
+        <div class="container">
+          <h3>Data Science Coursework</h3>
+          <p class="muted">Foundational topics I'm studying to build analytical capability</p>
+          <ul class="course-list">
+            <li><strong>Python Fundamentals</strong> — syntax, data structures, functions</li>
+            <li><strong>Data Wrangling</strong> — pandas for cleaning, joins, transformations</li>
+            <li><strong>Exploratory Analysis</strong> — descriptive statistics, distributions</li>
+            <li><strong>Visualization</strong> — Matplotlib & Seaborn for trends and comparisons</li>
+            <li><strong>Intro Statistics</strong> — hypothesis testing, correlation, regression basics</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h3>Projects</h3>
+          <p class="muted">Applying data skills to practical sales & operations scenarios</p>
+          <div class="project-grid">
+            <div class="project-card"><h4>Sales Trend Snapshot</h4><p>Basic Python script to aggregate weekly sales and visualize seasonality.</p></div>
+            <div class="project-card"><h4>Customer Retention Check</h4><p>Exploratory analysis of repeat purchase patterns to identify churn risk.</p></div>
+            <div class="project-card"><h4>Inventory Variance Review</h4><p>Pandas-based comparison of forecast vs actual to flag stock issues.</p></div>
+            <div class="project-card"><h4>SDA Mini Project</h4><p>Structured data analysis (SDA) exercise demonstrating cleaning & summarizing.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integration with Sales Experience -->
+      <section id="integration" class="integration">
+        <div class="container">
+          <h3>Integrating Sales & Data</h3>
+          <p>My sales leadership background gives me context for which metrics matter: forecast accuracy, pipeline health, customer lifetime value, and operational turnaround.</p>
+          <p>I leverage this domain knowledge when framing analyses—connecting numbers to real decisions like optimizing logistics or strengthening retention strategies.</p>
+        </div>
+      </section>
+
+      <!-- Future Direction -->
+      <section id="future" class="future">
+        <div class="container">
+          <h3>Future Direction</h3>
+          <p>I plan to combine hands-on sales management with data-driven insights to improve forecasting, streamline inventory flows, and proactively support key customer relationships.</p>
+          <p>Next steps: deepen Python & SQL, build lightweight dashboards, and progress toward predictive modeling for operational planning.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Alison Fisher — Portfolio</p>
+      </div>
+    </footer>
+
+    <script>
+      // single init script (avoid duplicate declarations)
+      (function initPortfolio(){
+        const yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+        const toggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('.site-nav');
+        if (toggle && nav) toggle.addEventListener('click', () => nav.classList.toggle('open'));
+      })();
+    </script>
+  </body>
+</html>
+<!doctype html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio  Alison Fisher</title>
+  </head>
+    <header class="site-header">
+        <h1 class="site-title">Alison Fisher</h1>
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation"></button>
+      </div>
+    </header>
+
+      <!-- Hero -->
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <h2 class="hero-title">Welcome</h2>
+          <p class="lead">Hi  I'm <strong>Alison Fisher</strong>. I am a single mother to twin boys and a Sales Manager for a wholesale company.</p>
+          <p><a class="cta" href="#about">Learn more</a></p>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="container">
+          <h3>About Me</h3>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <!-- Data Science Coursework -->
+      <section id="coursework" class="coursework">
+        <div class="container">
+          <h3>Data Science Coursework</h3>
+          <p class="muted">Foundational topics I'm studying to build analytical capability</p>
+          <ul class="course-list">
+            <li><strong>Python Fundamentals</strong> – syntax, data structures, functions</li>
+            <li><strong>Data Wrangling</strong> – pandas for cleaning, joins, transformations</li>
+            <li><strong>Exploratory Analysis</strong> – descriptive statistics, distributions</li>
+            <li><strong>Visualization</strong> – Matplotlib & Seaborn for trends and comparisons</li>
+            <li><strong>Intro Statistics</strong> – hypothesis testing, correlation, regression basics</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h3>Projects</h3>
+          <p class="muted">Applying data skills to practical sales & operations scenarios</p>
+          <div class="project-grid">
+            <div class="project-card"><h4>Sales Trend Snapshot</h4><p>Basic Python script to aggregate weekly sales and visualize seasonality.</p></div>
+            <div class="project-card"><h4>Customer Retention Check</h4><p>Exploratory analysis of repeat purchase patterns to identify churn risk.</p></div>
+            <div class="project-card"><h4>Inventory Variance Review</h4><p>Pandas-based comparison of forecast vs actual to flag stock issues.</p></div>
+            <div class="project-card"><h4>SDA Mini Project</h4><p>Structured data analysis (SDA) exercise demonstrating cleaning & summarizing.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integration with Sales Experience -->
+      <section id="integration" class="integration">
+        <div class="container">
+          <h3>Integrating Sales & Data</h3>
+          <p>My sales leadership background gives me context for which metrics matter: forecast accuracy, pipeline health, customer lifetime value, and operational turnaround.</p>
+          <p>I leverage this domain knowledge when framing analyses—connecting numbers to real decisions like optimizing logistics or strengthening retention strategies.</p>
+        </div>
+      </section>
+
+      <!-- Future Direction -->
+      <section id="future" class="future">
+        <div class="container">
+          <h3>Future Direction</h3>
+          <p>I plan to combine hands-on sales management with data-driven insights to improve forecasting, streamline inventory flows, and proactively support key customer relationships.</p>
+          <p>Next steps: deepen Python & SQL, build lightweight dashboards, and progress toward predictive modeling for operational planning.</p>
+        </div>
+      </section>
+          <p class="muted">Core sales & operations skills</p>
+          <div class="skill-grid">
+            <div class="skill-card"><h4>Sales Strategy</h4><p>Territory management, forecasting, pipeline growth</p></div>
+            <div class="skill-card"><h4>Customer Relations</h4><p>Account management, negotiation, retention</p></div>
+            <div class="skill-card"><h4>Operations</h4><p>Wholesale logistics, vendor coordination, order management</p></div>
+            <div class="skill-card"><h4>Tools</h4><p>Excel, CRM systems, reporting</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+        <p>&copy; <span id="year"></span> Alison Fisher  Portfolio</p>
+      </div>
+    </footer>
+
+    <script>
+      // duplicate script block removed (already initialized above)
+    </script>
+  </body>
+</html>
